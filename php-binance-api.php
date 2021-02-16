@@ -132,8 +132,8 @@ class API
             return;
         }
         if (file_exists($file) === false) {
-            echo "Unable to load config from: " . $file . PHP_EOL;
-            echo "Detected no API KEY or SECRET, all signed requests will fail" . PHP_EOL;
+            echo "<br>Unable to load config from: " . $file . PHP_EOL;
+            echo "<br>Detected no API KEY or SECRET, all signed requests will fail" . PHP_EOL;
             return;
         }
         $contents = json_decode(file_get_contents($file), true);
@@ -157,8 +157,8 @@ class API
             return;
         }
         if (file_exists($file) === false) {
-            echo "Unable to load config from: " . $file . PHP_EOL;
-            echo "No curl options will be set" . PHP_EOL;
+            echo "<br>Unable to load config from: " . $file . PHP_EOL;
+            echo "<br>No curl options will be set" . PHP_EOL;
             return;
         }
         $contents = json_decode(file_get_contents($file), true);
@@ -180,8 +180,8 @@ class API
             return;
         }
         if (file_exists($file) === false) {
-            echo "Unable to load config from: " . $file . PHP_EOL;
-            echo "No proxies will be used " . PHP_EOL;
+            echo "<br>Unable to load config from: " . $file . PHP_EOL;
+            echo "<br>No proxies will be used " . PHP_EOL;
             return;
         }
         $contents = json_decode(file_get_contents($file), true);
